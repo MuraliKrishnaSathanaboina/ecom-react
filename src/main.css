@@ -1,0 +1,12 @@
+#div1{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#div2{
+    height: 300px;
+    width: 300px;
+    margin: 50px;
+    background-color: aqua;
+}

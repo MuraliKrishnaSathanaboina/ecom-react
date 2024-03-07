@@ -2,6 +2,7 @@
 import './App.css';
 // import Topnav from './Topnav';
 import Header from './Header';
+import Main from './Main';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
     <div >
       {/* <Topnav/> */}
       <Header/>
+      <Main/>
     </div>
   );
 }
