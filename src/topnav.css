@@ -1,0 +1,27 @@
+.container1 {
+    position: sticky;
+    top: 0;
+    margin: -1%;
+    display: flex;
+    background-color: gray;
+    height: 50px;
+    column-gap: 15px;
+    z-index: 1;
+  }
+  
+  #para {
+       display: inline-block;
+    font-size: 32px;
+    transform: scale(2, 1);
+    margin: auto;
+    /* font-size: 30px;
+    margin: auto;
+    margin-top: 7px;
+    width: 500px; */
+  }
+  #searchbar {
+    border-radius: 20%;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 500px;
+  }
