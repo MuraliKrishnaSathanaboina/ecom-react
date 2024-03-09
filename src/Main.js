@@ -11,19 +11,19 @@ function Main() {
         },
         { name: "Mutton", PRICE: "750", type: "non", image: "./photos/mutton.jfif" },
         { name: "Fish", PRICE: "150", type: "non", image: "./photos/fish.jpg" },
-        { name: "Prawns", PRICE: "250", type: "non", image: "./photos/prawns.jfif" },
+        { name: "Prawns", PRICE: "250", type: "non", image: '/ecom-react/Assets/images/chicken.jfif' },
         {
           name: "Mashroom",
           PRICE: "250",
           type: "veg",
-          image: "./photos/mashroom.jfif",
+          image: '/ecom-react/Assets/images/chicken.jfif',
         },
-        { name: "Paneer", PRICE: "400", type: "veg", image: "./photos/paneer.jfif" },
+        { name: "Paneer", PRICE: "400", type: "veg", image: '/ecom-react/Assets/images/chicken.jfif' },
         {
           name: "Chicken",
           PRICE: "250",
           type: "non",
-          image: "./photos/chicken.jfif",
+          image: '/ecom-react/Assets/images/chicken.jfif',
         },
       ];
       
@@ -35,7 +35,10 @@ function Main() {
         <div id="div1">
         {products.map((value,index) => (
           <div>
-            <div key={index} id="div2">{products[index].image} {value.name}</div>
+            <div key={index} id="div2">
+              <div><img src={products[index].image} alt="Kerala" height="200px" width="250px"></img></div>
+              <div>{value.name}</div>
+               </div>
             {/* <div key={index} id="div2">{value.image}</div> */}
             </div>
         ))}
