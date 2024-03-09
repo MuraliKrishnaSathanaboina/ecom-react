@@ -7,7 +7,7 @@ function Main() {
           name: "Chicken",
           PRICE: "250",
           type: "non",
-          image: "/ecom-react/Assets/photos/chicken.jfif",
+          image: '/ecom-react/Assets/images/chicken.jfif',
         },
         { name: "Mutton", PRICE: "750", type: "non", image: "./photos/mutton.jfif" },
         { name: "Fish", PRICE: "150", type: "non", image: "./photos/fish.jpg" },
@@ -34,9 +34,13 @@ function Main() {
         ))} */}
         <div id="div1">
         {products.map((value,index) => (
-            <div key={index} id="div2">{value.name}</div>
+          <div>
+            <div key={index} id="div2">{products[index].image} {value.name}</div>
+            {/* <div key={index} id="div2">{value.image}</div> */}
+            </div>
         ))}
         </div>
+        {/* <img src={products[0].image} alt="Kerala" height="200px" width="250px"></img> */}
         
         
     </div>
