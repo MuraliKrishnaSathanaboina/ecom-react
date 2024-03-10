@@ -12,7 +12,7 @@ function Header() {
     
             <input
               id="searchbar"
-              onKeyUp="search_price()"
+              // onKeyUp="search_price()"
               type="text"
               name="search"
               placeholder="Search by price"
